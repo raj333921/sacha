@@ -1,11 +1,11 @@
-CREATE TABLE sachadigi.tickets (
+CREATE TABLE sachadigi.movie (
 	ticket_id serial PRIMARY KEY,
 	name VARCHAR ( 255 ) NOT NULL,
 	location VARCHAR ( 255 ) NOT NULL,
 	time TIMESTAMP NOT NULL,
 	description VARCHAR ( 255 ) NOT NULL,
 	created_on TIMESTAMP NOT NULL,
-  language VARCHAR (255) 
+        language VARCHAR (255) 
 );
 
 CREATE TABLE sachadigi.theatre (
@@ -19,6 +19,15 @@ CREATE TABLE sachadigi.theatre (
 	description VARCHAR ( 255 ) NOT NULL,
 	created_on TIMESTAMP NOT NULL 
 );
+
+INSERT INTO sachadigi.movie(name,location,time,description,created_on,language)
+VALUES ('Valtheru Veeraya','Brussels', CURRENT_TIMESTAMP,'An ultimate back from an director Babi',CURRENT_TIMESTAMP,'Telugu');
+
+INSERT INTO sachadigi.movie(name,location,time,description,created_on,language)
+VALUES ('Valtheru Veeraya','Brussels', CURRENT_TIMESTAMP,'An ultimate back from an director Babi',CURRENT_TIMESTAMP,'Hindi');
+
+INSERT INTO sachadigi.movie(name,location,time,description,created_on,language)
+VALUES ('Valtheru Veeraya','Brussels', CURRENT_TIMESTAMP,'An ultimate back from an director Babi',CURRENT_TIMESTAMP,'Tamil');
 
 
 INSERT INTO sachadigi.theatre(name,city,country,address,theatre_count,theatre_number,description,created_on)
