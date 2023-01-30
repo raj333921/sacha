@@ -5,7 +5,8 @@ CREATE TABLE sachadigi.movie (
 	time TIMESTAMP NOT NULL,
 	description VARCHAR ( 255 ) NOT NULL,
 	created_on TIMESTAMP NOT NULL,
-        language VARCHAR (255) 
+        language VARCHAR (255),
+	active boolean NOT NULL
 );
 
 CREATE TABLE sachadigi.theatre (
